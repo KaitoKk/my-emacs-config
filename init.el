@@ -7,10 +7,11 @@
 
 (setq ring-bell-function 'ignore) ; アラートのベルを鳴らさないようにする
 (blink-cursor-mode 0) ; カーソルが点滅しないようにする
+(global-linum-mode t) ; 行数表示
 
 (set-default-coding-systems 'utf-8) ; utf-8 にする
 (prefer-coding-system 'utf-8)
-
+n
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
