@@ -11,7 +11,7 @@
 
 (set-default-coding-systems 'utf-8) ; utf-8 にする
 (prefer-coding-system 'utf-8)
-n
+
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
