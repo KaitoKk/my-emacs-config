@@ -5,6 +5,7 @@
         ("org" . "http://orgmode.org/elpa/")))
 (package-initialize)
 
+(require 'linum)
 (setq ring-bell-function 'ignore) ; アラートのベルを鳴らさないようにする
 (blink-cursor-mode 0) ; カーソルが点滅しないようにする
 (global-linum-mode t) ; 行数表示
@@ -29,7 +30,6 @@
 (straight-use-package 'use-package)
 
 (use-package bind-key)
-(use-package diminish)
 
 (setq straight-use-package-by-default t)
 
