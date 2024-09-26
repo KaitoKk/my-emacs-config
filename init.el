@@ -9,6 +9,8 @@
 (setq ring-bell-function 'ignore) ; アラートのベルを鳴らさないようにする
 (blink-cursor-mode 0) ; カーソルが点滅しないようにする
 (global-linum-mode t) ; 行数表示
+(setq make-backup-files nil)
+(setq auto-save-default nil)
 
 (set-default-coding-systems 'utf-8) ; utf-8 にする
 (prefer-coding-system 'utf-8)
